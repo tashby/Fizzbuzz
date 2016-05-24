@@ -1,27 +1,22 @@
-$(document).ready(function(){
-
-
-FizzBuzz(20)
+$(document).ready(function() {
+    FizzBuzz(100);
 
 });
-function fizzyBuzzy (num){
-    if (num % 15 === 0){
+
+function fizzyBuzzy(num) {
+    if (num % 5 === 0 && num % 3 === 0) {
         return "FizzBuzz";
-    }
-    else if (num % 3 ===0){
+    } else if (num % 3 === 0) {
         return "Fizz";
-    }
-    else if (num % 5 === 0){
+    } else if (num % 5 === 0) {
         return "Buzz";
-    }
-    else{
-        return num;f
+    } else {
+        return num;
     }
 };
-    function FizzBuzz(num){
 
-        for (var i = 1; i <= num; i++) {
-            console.log(fizzyBuzzy(i))
-        } 
-
+function FizzBuzz(num) {
+    for (var i = 1; i <= num; i++) {
+        console.log(fizzyBuzzy(i))
     }
+}
